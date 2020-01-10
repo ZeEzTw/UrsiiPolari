@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ursii polari</title>
+<body background="./pattern.jpg">
+<form>
+<!-- <form>
+                Name :
+            <input type="text" placeholder="Name" name="">
+            Password :
+            <input type="Password" placeholder="Password" name="" />
+            <input type="submit" value="Login"/>
+</form> -->
+<br>
+
+<ol>
+    <li>
+        <p><font size="15">La ce greutate poate ajunge un urs polar?</font></p>
+        <ul style="display: inline-block;">
+            <form>
+                <li><p>200-250kg:<input type="radio" name="status"></p></li>
+                <li><p>100-150kg:<input type="radio" name="status" id="item1"></p></li>
+                <li><p>300-400kg:<input type="radio" name="status"></p></li>
+                <li><p>700-800kg:<input type="radio" name="status"></p></li>
+                <li><p>400-600kg:<input type="radio" name="status"></p></li>  
+            </form>
+        </ul>
+        <img src="index.jpg" style="display: inline-block;" >
+    </li>
+<hr>
+    <li>
+        <p><font size="15">Cate pleoape au ursii polari?</font></p>
+        <ul>
+            <form>
+                <li><p>1:<input type="radio" name="status"></p></li>
+                <li><p>3:<input type="radio" name="status"></p></li>
+                <li><p>2-5:<input type="radio" name="status" id="item2"></p></li>
+                <li><p>2:<input type="radio" name="status"></p></li>
+                <li><p>Peste 5:<input type="radio" name="status"></p></li>  
+            </form>
+        </ul>
+    </li>
+</form>
+<hr>
+    <li>
+        <p><font size="15">1.Cat de mult traieste un urs polar?</font></p>
+        <ul>
+            <form>
+                <img src="in2dex.jpg" style="position: absolute; top: 640px; left: 300px;" >
+                <li><p>2-3 ani: <input type="radio" name="status"></p></li>
+                <li><p>Peste 50: <input type="radio" name="status"></p></li>
+                <li><p>15-20 ani: <input type="radio" name="status"></p></li>
+                <li><p>5-10 ani: <input type="radio" id="item3" name="status"></p></li>
+                <li><p>5-20: <input type="radio" name="status"></p></li>  
+            </form>
+        </ul>
+    </li>
+<hr>
+    <li>
+        <p><font size="15">Care din uramatoarele informatii ti se par urile?</font></p>
+    <ul>
+        <form>
+            <li> <input type="checkbox"> În apă, pot ajunge la viteze de înot de 10 kilometri pe oră. <br></li>
+            <li> <input type="checkbox"> Un urs polar obișnuit poate străbate mai mult de 2.900 de kilometri pe an, urmărind o sursă de hrană.<br></li>
+            <li> <input type="checkbox"> Când umblă pe gheață, pot sări peste crăpături de șase metri!<br></li>
+            <li> <input type="checkbox"> Prada lor principală o constituie focile<br></li>
+            <li> <input type="checkbox"> Urșii polari pot ataca prada de la o distanță de 15-30 de metri și pot atinge viteza de 40 de kilometri pe oră.<br><li>
+        </form>
+    </ul>
+</ol>
+
+<button onclick="verify()">Verifica</button>
+
+<div style="font-size: 30px" id="answer">
+</div>
+
+<a href=""><font size="5">..........................Daca mai vrei sa vezi si alte site-uri asemanatoare click aici</a>
+
+
+</body>
+<script>
+    function verify() {
+        var correct = 0;
+        if (document.getElementById("item1").checked) {
+            ++correct;
+        }
+        
+        if (document.getElementById("item2").checked) {
+            ++correct;
+        }
+
+        if (document.getElementById("item3").checked) {
+            ++correct;
+        }
+
+        document.getElementById("answer").innerHTML = correct + " raspunsuri corecte";
+
+    }
+
+</script>
+</head>
+</html>
